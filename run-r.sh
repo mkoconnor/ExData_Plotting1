@@ -1,5 +1,5 @@
 #!/bin/sh
 
-for file in $(dirname $0)/*.R; do
+for file in $(dirname $0)/plot*.R; do
     R --vanilla --slave < $file
 done
