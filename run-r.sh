@@ -1,5 +1,5 @@
 #!/bin/sh
 
 for file in $(dirname $0)/*.R; do
-    R --vanilla < $file
+    R --vanilla --slave < $file
 done
